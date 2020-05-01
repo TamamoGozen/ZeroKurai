@@ -178,7 +178,7 @@ $ sudo reboot
 
 /パーティーションの確認
 
-    $ ndmnt -n -o SOURCE /
+    $ findmnt -n -o SOURCE /
 結果が「/dev/sda2」であれば成功
 
 
