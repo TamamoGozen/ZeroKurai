@@ -159,7 +159,7 @@ $ sudo blkid
 $ sudo nano /boot/firmware/btcmd.txt
 $ sudo nano /boot/firmware/nobtcmd.txt
 ```
-> Ubuntu20.04では「/boot/firmware/nobtcmd.txt」が無い
+> Ubuntu20.04では「/boot/firmware/cmdline.txt」を編集する。「/boot/firmware/btcmd.txt」と「/boot/firmware/nobtcmd.txt」が無い
 
 「root=云々」の部分を「root=PARTUUID=変更したPARTUUID-02」に書き換える
 
@@ -169,7 +169,7 @@ root=PARTUUID=abcd1234-02
 ```
 
 > USBストレージを指すポートを完全に固定にする場合、PARTUUIDの変更をスキップして  
-> 「root=云々」の部分を「root=/dev/sda02」に書き換えるだけでも大丈夫
+> 「root=云々」の部分を「root=/dev/sda2」に書き換えるだけでも大丈夫
 
 再起動
 
