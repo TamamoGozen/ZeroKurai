@@ -207,7 +207,7 @@ $ sudo nano /etc/netplan/50-cloud-init.yaml
         ethernets:
             eth0:
             dhcp4: false            <- DHCPクライアント機能の無効化
-            optional: false
+            optional: true
             addresses:
                 - 192.168.0.？/24    <- ラズパイのIPアドレス
             gateway4: 192.168.0.？    <- ゲートウェイのIPアドレス
