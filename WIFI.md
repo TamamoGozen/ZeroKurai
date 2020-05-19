@@ -40,6 +40,7 @@ $ sudo nano /etc/netplan/50-cloud-init.yaml
                         addresses:
                             - 192.168.0.？
     
+        wifis:
             wlan0:
                 addresses:
                     - 192.168.0.？/24       <- Wi-Fiアダプタに割り当てるIPアドレス
