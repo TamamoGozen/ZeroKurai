@@ -43,13 +43,6 @@ $ sudo cp /lib/systemd/system/rc-local.service /etc/systemd/system/.
 $ sudo ln -s /etc/systemd/system/rc-local.service /etc/systemd/system/multi-user.target.wants
 ```
 
-
-サービスファイルに対してリンクを貼る
-
-```
-$ sudo ln -s /etc/systemd/system/rc-local.service /etc/systemd/system/multi-user.target.wants
-```
-
 再起動
 
 ```
