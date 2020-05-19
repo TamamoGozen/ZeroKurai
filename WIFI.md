@@ -42,14 +42,14 @@ $ sudo nano /etc/netplan/50-cloud-init.yaml
     
         wifis:
             wlan0:
+                dhcp4: false
+                optional: true
                 addresses:
                     - 192.168.0.？/24       <- Wi-Fiアダプタに割り当てるIPアドレス
                 gateway4: 192.168.0.？
                 nameservers:
                     addresses:
-                        - 192.168.0.？
-                dhcp4: false
-                optional: true              <- ここまでは「eth0」セクションと同じ
+                        - 192.168.0.？      <- ここまでは「eth0」セクションと同じ
                 access-points:
                     singleboard:            <- アクセスポイント名
                         password: team5ch   <- アクセスポイントに対するパスワード
