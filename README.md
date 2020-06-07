@@ -277,8 +277,8 @@ $ sudo reboot
 ```
 $ sudo apt-get install -y boinc-client
 $ sudo apt-get install -y boinctui
-$ sudo apt-get install -y boinc-manager
 ```
+> 「boinc-manager」というGUIのI/Fも同じ手順でインストールできるけど使わないのでスキップ
 
 2. スレのテンプレを参考にプロジェクトへ参加。お疲れさまでした
 
