@@ -30,7 +30,7 @@ Amazonとか秋月とかRSコンポーネンツとかお好きなところでポ
 
 電源供給用にUSB-Type Cコネクタの奴とLANケーブル  
 今回は使わないけど、ディスプレイ繋いで作業する場合はmicro HDMIケーブルも  
-micro HDMI変換アダプタは電源ポートと干渉するのでお勧めしない
+HDMI→micro HDMI変換アダプタは電源ポートと干渉するのでお勧めしない
 
 > うちではアーマーケースって奴使ってるけど、基盤全部を金属で囲うせいかWi-Fi接続がクッソ遅くなる  
 > 冷却ファンは「Pi Fan」で検索して出てきたものをねじ止めして3V稼働。これで稼働中の温度は47度前後
@@ -195,10 +195,10 @@ $ sudo apt-get upgrade -y
 
 ### ・IPアドレスの固定
 
-1. /etc/netplan/50-cloud-init.yamlを編集
-
+1. 「/etc/netplan/99-cloud-init.yaml」というファイルを新規作成
+> 「/etc/netplan/50-cloud-init.yaml」を編集するのは悪手なので新たに定義ファイルを作るのが正しいらしい
 ```
-$ sudo nano /etc/netplan/50-cloud-init.yaml
+$ sudo nano /etc/netplan/99-cloud-init.yaml
 ```
 
 編集例
