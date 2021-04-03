@@ -25,6 +25,8 @@ Amazonとか秋月とかRSコンポーネンツとかお好きなところでポ
 16GB以上で高速なやつ。というか8GBとか最近見かけないし  
 64GBとかでも値段は数百円しか変わらないので適当に容量でかいやつをポチる  
 速度はA1/A2規格とかclass10とか。価格.comにも転送速度の情報載ってるから参考に
+> Ubuntu 20.10でUSBストレージから起動できるようになったので、その場合はUSBメモリ等を用意
+> 「2+.OSをUSBストレージにインストールする場合のメモ」もスキップ
 
 ### ・ケーブル類
 
@@ -168,7 +170,7 @@ $ sudo nano /boot/firmware/nobtcmd.txt
 root=PARTUUID=abcd1234-02
 ```
 
-> USBストレージを指すポートを完全に固定にする場合、PARTUUIDの変更をスキップして  
+> USBストレージを挿すポートを完全に固定にする場合、PARTUUIDの変更をスキップして  
 > 「root=云々」の部分を「root=/dev/sda2」に書き換えるだけでも大丈夫
 
 再起動
@@ -257,6 +259,8 @@ $ sudo apt-get install -y language-pack-ja
 ```
 $ sudo localectl set-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"
 ```
+> ubuntu 20.10の場合は「sudo localectl set-locale LANG=ja_JP.UTF-8」で
+> 「LANGUAGE="ja_JP:ja"」はいらないっぽい
 
 3. タイムゾーンを日本にする
 
