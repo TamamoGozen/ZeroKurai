@@ -51,8 +51,8 @@ $ sudo nano /etc/netplan/99-cloud-init.yaml
                     addresses:
                         - 192.168.0.？      <- ここまでは「eth0」セクションと同じ
                 access-points:
-                    singleboard:            <- アクセスポイント名
-                        password: team5ch   <- アクセスポイントに対するパスワード
+                    singleboard:            <- アクセスポイント名(例では"singleboard")
+                        password: team5ch   <- アクセスポイントに対するパスワード(例では"team5ch")
     
         version: 2 
 
