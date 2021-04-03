@@ -208,14 +208,14 @@ $ sudo nano /etc/netplan/99-cloud-init.yaml
     network:
         ethernets:
             eth0:
-            dhcp4: false            <- DHCPクライアント機能の無効化
-            optional: true
-            addresses:
-                - 192.168.0.？/24    <- ラズパイのIPアドレス
-            gateway4: 192.168.0.？    <- ゲートウェイのIPアドレス
-            nameservers:
+                dhcp4: false            <- DHCPクライアント機能の無効化
+                optional: true
                 addresses:
-                    - 192.168.0.？    <- DNSサーバのIPアドレス
+                    - 192.168.0.？/24    <- ラズパイのIPアドレス
+                gateway4: 192.168.0.？    <- ゲートウェイのIPアドレス
+                nameservers:
+                    addresses:
+                        - 192.168.0.？    <- DNSサーバのIPアドレス
         version: 2 
 2. 設定の反映
 
