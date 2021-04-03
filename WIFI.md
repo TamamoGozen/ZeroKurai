@@ -20,10 +20,10 @@ $ ls /sys/class/net
 
 ## ・設定ファイルの編集
 
-/etc/netplan/50-cloud-init.yamlを編集
+「/etc/netplan/99-cloud-init.yaml」というファイルを新規作成、または編集
 
 ```
-$ sudo nano /etc/netplan/50-cloud-init.yaml
+$ sudo nano /etc/netplan/99-cloud-init.yaml
 ```
 
 編集例
