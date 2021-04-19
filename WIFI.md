@@ -36,9 +36,9 @@ $ sudo nano /etc/netplan/99-cloud-init.yaml
                 addresses:
                     - 192.168.0.？/24
                 gateway4: 192.168.0.？
-                    nameservers:
-                        addresses:
-                            - 192.168.0.？
+                nameservers:
+                    addresses:
+                        - 192.168.0.？
     
         wifis:
             wlan0:
