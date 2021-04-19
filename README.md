@@ -231,7 +231,7 @@ $ sudo netplan apply
 1. 実メモリの2倍の値を設定するのが一般的らしいので16GBを指定
 
 ```
-$ sudo fallocate -l 8G /swapfile
+$ sudo fallocate -l 16G /swapfile
 $ sudo chmod 600 /swapfile
 $ sudo mkswap /swapfile
 ```
