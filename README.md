@@ -220,7 +220,7 @@ $ sudo nano /etc/netplan/99-cloud-init.yaml
                     addresses:
                         - 192.168.0.？    <- DNSサーバのIPアドレス
         version: 2 
-2. 設定の反映
+2. 設定の反映。コマンド実行後は設定したIPアドレスになるので、改めてそのアドレスにssh接続する
 
 ```
 $ sudo netplan apply
