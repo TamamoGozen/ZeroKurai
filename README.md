@@ -26,9 +26,7 @@ Amazonとか秋月とかRSコンポーネンツとかお好きなところでポ
 16GB以上で高速なやつ。というか8GBとか最近見かけないし  
 64GBとかでも値段は数百円しか変わらないので適当に容量でかいやつをポチる  
 速度はA1/A2規格とかclass10とか。価格.comにも転送速度の情報載ってるから参考に
-> Ubuntu 20.10でUSBストレージから起動できるようになったので、その場合はUSBメモリ等を用意。
-> 「2+.OSをUSBストレージにインストールする場合のメモ」もスキップ。
-> ただし20.10だとBOINCの起動でエラーが出るので20.04の方が無難 
+> Ubuntu 20.10でUSBストレージから起動できるようになったけどBOINCの起動でエラーが出て使えないので20.04を推奨 
 
 
 ### ・ケーブル類
@@ -36,7 +34,6 @@ Amazonとか秋月とかRSコンポーネンツとかお好きなところでポ
 電源供給用にUSB-Type Cコネクタの奴とLANケーブル  
 今回は使わないけど、ディスプレイ繋いで作業する場合はmicro HDMIケーブルも  
 HDMI→micro HDMI変換アダプタは電源ポートと干渉するのでお勧めしない
-
 > うちではアーマーケースって奴使ってるけど、基盤全部を金属で囲うせいかWi-Fi接続がクッソ遅くなる  
 > 冷却ファンは「Pi Fan」で検索して出てきたものをねじ止めして3V稼働。これで稼働中の温度は47度前後
 
@@ -50,9 +47,6 @@ HDMI→micro HDMI変換アダプタは電源ポートと干渉するのでお勧
 microSDカードにOSイメージを焼くのには「Raspberry Pi Imager」ってソフトを使用  
 書き込み対象のmicroSDを指定して使いたいOS指定するだけ  
 同じようなソフトに「noob」とか「balena Etcher」とか「DD for Windows」とかあるので好きなやつで
-> Ubuntu 20.10の場合は「Ubuntu 20.10 64-bit server OS」を選択。
-> desktopの方だとヘッドレスインストールしたい場合にssh接続できない。
-> ただし前述のとおり20.10ではBOINCの起動がエラーになる
 
 ### ・ラズパイの起動
 
@@ -265,8 +259,6 @@ $ sudo apt-get install -y language-pack-ja
 ```
 $ sudo localectl set-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"
 ```
-> ubuntu 20.10の場合は「sudo localectl set-locale LANG=ja_JP.UTF-8」で
-> 「LANGUAGE="ja_JP:ja"」はいらないっぽい
 
 3. タイムゾーンを日本にする
 
