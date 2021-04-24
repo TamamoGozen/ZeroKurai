@@ -43,10 +43,11 @@ HDMI→micro HDMI変換アダプタは電源ポートと干渉するのでお勧
 
 ### ・起動用microSDを作る
 
-今回は64bit版のubuntu 19.10をインストール  
+今回は64bit版のubuntu 19.10をインストール
 microSDカードにOSイメージを焼くのには「Raspberry Pi Imager」ってソフトを使用  
 書き込み対象のmicroSDを指定して使いたいOS指定するだけ  
 同じようなソフトに「noob」とか「balena Etcher」とか「DD for Windows」とかあるので好きなやつで
+> 20.04なら「64-bit server」を選択
 
 ### ・ラズパイの起動
 
