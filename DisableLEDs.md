@@ -23,6 +23,7 @@ $ sudo nano /etc/rc.local
     echo none | sudo tee /sys/class/leds/led1/trigger
     echo 0 | sudo tee /sys/class/leds/led0/brightness
     echo 0 | sudo tee /sys/class/leds/led1/brightness
+> 「led0」と「led1」が無い場合、それぞれ「ACT」と「PWR」に読み替える
 
 ## ・systemdで起動させる設定をする
 
